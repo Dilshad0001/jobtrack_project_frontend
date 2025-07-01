@@ -115,7 +115,7 @@ function Login() {
             localStorage.setItem('accessToken', access)
             localStorage.setItem('refreshToken', refresh)
             console.log('response==', response);
-            navigate('/home')
+            navigate('/profile')
         } catch (error) {
             console.log('invalid otp');
         } finally {

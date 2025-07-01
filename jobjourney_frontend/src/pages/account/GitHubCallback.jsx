@@ -108,10 +108,13 @@ function GitHubCallback() {
         console.log("[GitHubCallback] Django response:", response.data);
 
         const djangoToken = response.data.token;
+
         if (djangoToken) {
         //   localStorage.setItem("authToken", djangoToken);
-        localStorage.setItem("access_token", djangoToken);
-          navigate("/home");
+        localStorage.setItem("accessToken", response.data.access_token);
+        console.log("acesstokennn===",response.data.access_token);
+        
+          navigate("/profile");
         } else {
           console.error("[GitHubCallback] No token returned by backend.");
         }

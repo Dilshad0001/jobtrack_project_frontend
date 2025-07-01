@@ -72,15 +72,18 @@ export default function GoogleLoginComponent() {
 
       const data = res.data;
 
+      console.log("token data==",res.data.access_token);
+      
+
       // Store tokens in localStorage
-      localStorage.setItem('access_token', credential);
+      localStorage.setItem('accessToken', res.data.access_token);
       localStorage.setItem('user_info', JSON.stringify(data));
       console.log('credenetials==', credential);
       
       // Changed alert to console.log as alerts are not good practice in production and also conflict with Canvas
       console.log('Login successful!'); 
       console.log('tokens===', res.data);
-      navigate('/home');
+      navigate('/profile');
 
     } catch (err) {
       console.error(err);

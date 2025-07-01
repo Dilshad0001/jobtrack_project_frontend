@@ -36,6 +36,7 @@ import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import GitHubCallback from "./pages/account/GitHubCallback";
 import Homepage from "./pages/users/Homepage";
 import Login from "./pages/account/Login";
+import UserProfile from "./pages/users/UserProfile";
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
         <Route path="/github-callback" element={<GitHubCallback />} />
         <Route path="/home" element={<Homepage/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/profile" element={<UserProfile/>}/>
       </Routes>
     </Router>
   );
