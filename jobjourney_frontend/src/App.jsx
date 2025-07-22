@@ -62,6 +62,7 @@ function App() {
             </div>
         }
         />    
+        
         <Route path="/github-callback" element={<GitHubCallback />} />
         <Route path="/home" element={<Homepage/>}/>
         <Route path="/login" element={<Login/>}/>
