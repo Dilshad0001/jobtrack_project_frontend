@@ -6,7 +6,8 @@ import axios from "axios";
 // Authenticated instance
 export const axiosInstance = axios.create({
   // baseURL: "http://51.21.215.128:8080",
-    baseURL: "https://9b92a92e3201.ngrok-free.app",
+    // baseURL: "https://9b92a92e3201.ngrok-free.app",
+    baseURL: "https://5a9b8a72f056.ngrok-free.app",
 
     // baseURL: "https://api.jobjourney.com",
 
@@ -24,7 +25,8 @@ axiosInstance.interceptors.request.use((config) => {
 // Public instance (no auth)
 export const publicAxios  = axios.create({
   // baseURL: "http://51.21.215.128:8080",
-  baseURL: "https://9b92a92e3201.ngrok-free.app",
+  // baseURL: "https://9b92a92e3201.ngrok-free.app",
+  baseURL: "https://5a9b8a72f056.ngrok-free.app",
 
   // baseURL: "https://api.jobjourney.com",
 
