@@ -8,7 +8,8 @@ let socket = null;
 export const connectSocket = (userId, onMessage) => {
   const token = localStorage.getItem("accessToken");
 
-socket = new WebSocket(`ws://51.21.215.128/chat/ws/chat/${userId}/?token=${token}`);
+// socket = new WebSocket(`ws://51.21.215.128/chat/ws/chat/${userId}/?token=${token}`);
+socket = new WebSocket(`wss://jobjourney.ddns.net/chat/ws/chat/${userId}/?token=${token}`);
 
   socket.onopen = () => console.log("✅ WebSocket Connected:", userId);
 
