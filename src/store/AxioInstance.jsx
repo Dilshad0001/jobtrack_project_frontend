@@ -23,8 +23,8 @@ import axios from "axios";
 
 // Authenticated instance
 export const axiosInstance = axios.create({
-  // baseURL: "http://51.21.215.128",
-    baseURL: "https://api.jobjourney.com",
+  baseURL: "http://51.21.215.128",
+    // baseURL: "https://api.jobjourney.com",
 
 });
 
@@ -38,7 +38,7 @@ axiosInstance.interceptors.request.use((config) => {
 
 // Public instance (no auth)
 export const publicAxios  = axios.create({
-  // baseURL: "http://51.21.215.128",
-    baseURL: "https://api.jobjourney.com",
+  baseURL: "http://51.21.215.128",
+    // baseURL: "https://api.jobjourney.com",
 
 });
