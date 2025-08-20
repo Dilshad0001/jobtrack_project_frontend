@@ -8,7 +8,7 @@ export const axiosInstance = axios.create({
   // baseURL: "http://51.21.215.128:8080",
     // baseURL: "https://9b92a92e3201.ngrok-free.app",
     // baseURL: "https://5a9b8a72f056.ngrok-free.app",
-    baseURL: "http://jobjourney.ddns.net:8080",
+    baseURL: "https://jobjourney.ddns.net",
 
     // baseURL: "https://api.jobjourney.com",
 
@@ -28,7 +28,7 @@ export const publicAxios  = axios.create({
   // baseURL: "http://51.21.215.128:8080",
   // baseURL: "https://9b92a92e3201.ngrok-free.app",
   // baseURL: "https://5a9b8a72f056.ngrok-free.app",
-   baseURL: "http://jobjourney.ddns.net:8080",
+   baseURL: "https://jobjourney.ddns.net",
 
 
   // baseURL: "https://api.jobjourney.com",
