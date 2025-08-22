@@ -33,7 +33,7 @@ function GitHubCallback() {
         localStorage.setItem("accessToken", response.data.access_token);
         console.log("acesstokennn===",response.data.access_token);
         
-          navigate("/profile");
+          navigate("/user");
         } else {
           console.error("[GitHubCallback] No token returned by backend.");
         }
